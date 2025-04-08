@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: src/preprocessing.py
+      hash: md5
+      md5: edc596f03ed539f10ee5e03ea9586b05
+      size: 619
+    outs:
+    - path: data/X_test.npy
+      hash: md5
+      md5: 03ffb9f8be9ce4f7c1df20185dacb491
+      size: 1088
+    - path: data/X_train.npy
+      hash: md5
+      md5: 7377c446e20961a8e3466f24f35771cd
+      size: 3968
+    - path: data/y_test.npy
+      hash: md5
+      md5: df18a078e3d948fc25fa10ec8384d5f1
+      size: 368
+    - path: data/y_train.npy
+      hash: md5
+      md5: cd9bfaa9d166ebc4f5c4a38ed06ba5b4
+      size: 1088

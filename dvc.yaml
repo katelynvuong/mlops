@@ -1,0 +1,10 @@
+stages:
+  preprocess:
+    cmd: python src/preprocessing.py
+    deps:
+      - src/preprocessing.py
+    outs:
+      - data/X_train.npy
+      - data/X_test.npy
+      - data/y_train.npy
+      - data/y_test.npy
